@@ -45,7 +45,7 @@ function decompress(source, destination) {
 
 } 
 
-const src =  "./file/apt.mp4"
+const src =  "./file/test.txt"
 const compDes =  "./file/apt-compressed.hfc"
 const decompDes =  "./file/apt-decomp"
 

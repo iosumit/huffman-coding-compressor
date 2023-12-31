@@ -12,6 +12,12 @@ const nodeSort=(a, b)=>a.frequency-b.frequency;
 **/
 
 export default function HuffmanCoding(freqMap) {
+    /**
+     * @TODO Need Need to change to MinHeap which takes 
+     * Heapify - O(n) 
+     * Extract min - O(log n)
+     */
+
     // Map to Node
     const nodes = [...freqMap.entries()].map(e=> new Node(e[0], e[1])).sort(nodeSort);
     const n = nodes.length
